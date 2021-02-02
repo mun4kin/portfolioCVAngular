@@ -1,0 +1,47 @@
+@import "../../../_variables.scss";
+
+.header {
+  display: flex;
+  min-height: 140px;
+  padding: 20px;
+  background: $primary;
+  position: relative;
+  z-index: 2;
+}
+
+.header__info {
+  margin-left: 30px;
+}
+
+.header__contacts {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.header__contacts-wrapper{
+  padding-right: 20px;
+}
+
+.header__contacts-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  @include lightText;
+}
+
+.header__contacts-row i {
+  margin-right: 8px;
+}
+
+.header__name {
+  margin-bottom: 5px;
+  color: $light;
+}
+
+.header__position {
+  @include lightText;
+}
+.header__contacts-icon{
+  padding-right: 10px;
+}

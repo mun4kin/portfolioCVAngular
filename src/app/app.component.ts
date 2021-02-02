@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { IStore } from './_store';
+import { GetMainInfoPending } from './_store/actions/mainInfo.action';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'portfolioCVAngular';
+export class AppComponent implements OnInit {
+  constructor( private store: Store<IStore>) {
+  }
+  ngOnInit():void {
+    this.store.dispatch(new GetMainInfoPending('Pugachev'));
+  }
 }

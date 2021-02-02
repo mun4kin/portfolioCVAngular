@@ -1,0 +1,20 @@
+$primary: #26a69a;
+$light: #eeeeee;
+$light100: #e0e0e0;
+$light200: #f5f5f5;
+$boxShadowColor: rgba(165, 173, 182, 0.4);
+$dark: #263238;
+$dark100: #37474F;
+
+
+@mixin lightText() {
+  color: $light;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin standardText($size: 1rem, $weight: 400, $color: $dark) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}

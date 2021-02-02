@@ -1,0 +1,25 @@
+<header class="header" *ngIf="mainInfo$ |async as info">
+  <div class="header__info">
+    <h1 class="header__name">{{info.surname + ' ' + info.name}}</h1>
+    <p class="header__position"> {{info.position}}</p>
+    <p class="header__position"><span class='header__experience'>{{info.experience}} years experience</span></p>
+  </div>
+  <div class="header__contacts">
+    <div class="header__contacts-wrapper">
+      <div class="header__contacts-row">
+        <fa-icon class="header__contacts-icon" [icon]="faEnvelope"></fa-icon>
+        {{info.email}}</div>
+      <div class="header__contacts-row">
+        <fa-icon class="header__contacts-icon" [icon]="faPhone"></fa-icon>
+        {{info.phone}}</div>
+    </div>
+    <div class="header__contacts-wrapper">
+      <div class="header__contacts-row">
+        <fa-icon class="header__contacts-icon" [icon]="faLinkedin"></fa-icon>
+        {{info.linkedIn}}</div>
+      <div class="header__contacts-row">
+        <fa-icon class="header__contacts-icon" [icon]="faGithub"></fa-icon>
+        {{info.git}}</div>
+    </div>
+  </div>
+</header>
