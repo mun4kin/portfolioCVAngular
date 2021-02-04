@@ -1,5 +1,7 @@
 import {
-  IMainInfo, ISkill, ITimeLine
+  IHobby,
+  ILanguage,
+  IMainInfo, ISkill, ISoftSkill, ITimeLine
 } from '../types/mainInfo.type';
 
 // ================
@@ -33,10 +35,28 @@ export class GetSkillsSuccess {
   public constructor(public skills:ISkill[]) {}
 }
 // ================
+export class GetSoftSkillsSuccess {
+  public readonly type: string = '[Success] get soft skills';
+  public constructor(public softSkills:ISoftSkill[]) {}
+}
+// ================
+export class GetLanguagesSuccess {
+  public readonly type: string = '[Success] get languages';
+  public constructor(public languages:ILanguage[]) {}
+}
+// ================
+export class GetHobbiesSuccess {
+  public readonly type: string = '[Success] get hobbies';
+  public constructor(public hobbies:IHobby[]) {}
+}
+// ================
 export type mainInfoActions =
   GetMainInfoSuccess |
   GetEducationSuccess |
   GetMainInfoPending |
   GetJobSuccess |
   GetSummarySuccess |
-  GetSkillsSuccess;
+  GetSkillsSuccess |
+  GetSoftSkillsSuccess |
+  GetLanguagesSuccess |
+  GetHobbiesSuccess

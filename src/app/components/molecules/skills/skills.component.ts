@@ -1,6 +1,4 @@
-import {
-  Component, Input, OnInit
-} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import {
   faReact, faAngular, faHtml5, faNodeJs, faGithub, faCss3Alt, faJs
@@ -12,9 +10,8 @@ import { ISkill } from '../../../_store/types/mainInfo.type';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
-
-
+export class SkillsComponent {
+  @Input() data:ISkill[]
   public icons={
     react: faReact,
     angular: faAngular,
@@ -24,12 +21,4 @@ export class SkillsComponent implements OnInit {
     CSS: faCss3Alt,
     javaScript: faJs
   }
-
-
-@Input() data:ISkill[]
-constructor() { }
-
-ngOnInit(): void {
-}
-
 }

@@ -18,7 +18,13 @@ color: $dark100;
   display: flex;
   align-items: flex-start;
 }
-
+.timeline__element-body{
+  padding-left: 20px;
+}
+.timeline__element-date {
+  height: 20px;
+  @include standardText(0.775rem);
+}
 .timeline__element-logo--wrapper {
   min-width: 35px;
   display: flex;

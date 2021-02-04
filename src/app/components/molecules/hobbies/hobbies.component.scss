@@ -1,0 +1,28 @@
+@import "../../../_variables";
+
+.hobbies {
+  display: flex;
+}
+
+.hobby {
+  width: 25%;
+  text-align: center;
+}
+
+.hobby__icon {
+  @include standardText(20px, 400, $dark100);
+}
+
+.hobby__name {
+  @include standardText(12px);
+}
+
+.hobby__image {
+  //display: flex;
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  max-height: 18px;
+  font-size: 18px;
+  //margin-top: 3px;
+}

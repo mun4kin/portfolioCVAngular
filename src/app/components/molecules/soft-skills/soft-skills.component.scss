@@ -1,0 +1,19 @@
+@import "../../../_variables";
+
+.soft-skill {
+  display: flex;
+}
+
+.soft-skill__name {
+  @include standardText();
+}
+
+.soft-skill__circle {
+  margin-top: 0.5rem;
+  width: 6px;
+  min-width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $primary;
+  margin-right: 0.5rem;
+}

@@ -1,5 +1,14 @@
-<aside >
+<aside>
   <app-main-tile [icon]="faTasks" [name]="'Skills'">
     <app-skills [data]="skills$|async"></app-skills>
+  </app-main-tile>
+  <app-main-tile [icon]="faUser" [name]="'Soft Skills'">
+    <app-soft-skills [data]="softSkils$|async"></app-soft-skills>
+  </app-main-tile>
+  <app-main-tile [icon]="faGlobeEurope" [name]="'Languages'">
+    <app-languages [data]="languages$|async"></app-languages>
+  </app-main-tile>
+  <app-main-tile [icon]="faFootballBall" [name]="'Hobbies'">
+    <app-hobbies [data]="hobbies$|async"></app-hobbies>
   </app-main-tile>
 </aside>

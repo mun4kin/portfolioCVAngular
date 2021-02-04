@@ -1,1 +1,13 @@
-<p>hobbies works!</p>
+<div class='hobbies'>
+
+  <div class="hobby" *ngFor="let hobby of data">
+    <div class="hobby__icon">
+      <fa-icon *ngIf="icons[hobby.name] as icon"  [icon]="icon"></fa-icon>
+      <img *ngIf="!icons[hobby.name]" class='hobby__image' src='../../../../assets/images/{{hobby.name}}.png' alt=""/>
+    </div>
+
+    <p class="hobby__name">{{hobby.name}}</p>
+  </div>
+
+
+</div>

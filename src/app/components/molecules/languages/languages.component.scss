@@ -1,0 +1,14 @@
+@import "../../../_variables";
+
+.language {
+  display: flex;
+}
+
+.language__flag {
+  @include standardText();
+  margin-right: 4px;
+}
+
+.language__level {
+  @include standardText(1rem, 300);
+}

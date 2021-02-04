@@ -1,1 +1,7 @@
-<p>languages works!</p>
+<div class="language" *ngFor="let language of data">
+  <span class="language__flag">{{language.flag}}</span>
+  <span>
+    <span class="language__flag">{{language.language}}</span>
+    <span class="language__level">{{language.level}}</span>
+  </span>
+</div>

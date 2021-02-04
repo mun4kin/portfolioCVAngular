@@ -26,10 +26,26 @@ export interface ISkill {
   image?: string;
   color?:string;
 }
+export interface ISoftSkill {
+  name: string;
+}
+export interface ILanguage {
+  flag: string;
+  language: string;
+  level: string;
+}
+export interface IHobby {
+  icon?: string;
+  name: string;
+  image?:any;
+}
 export interface IProfile{
   mainInfo:IMainInfo;
   education:ITimeLine[];
   job:ITimeLine[];
   summary:string;
-  skills:ISkill[]
+  skills:ISkill[];
+  softSkills:ISoftSkill[];
+  languages:ILanguage[];
+  hobbies:IHobby[];
 }

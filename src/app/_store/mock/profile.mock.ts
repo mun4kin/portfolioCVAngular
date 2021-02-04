@@ -18,7 +18,7 @@ export const usersMock:IProfile[] = [
       ' All of my projects were near Frontend Development and I dipped more and more until I decided that frontend more interesting for me.' +
       ' I have been a frontend developer since 2015. My first projects was written on Angular ' +
       'but I had to change the technology stack to React at 2018. Currently, ' +
-      'I’m a leader and an  architect of all internal portals in large bank of Russia.',
+      'I’m a leader and an  architect of all internal portals in one of the largest bank of Russia.',
     education:
       [
         {
@@ -36,11 +36,11 @@ export const usersMock:IProfile[] = [
         place: 'Innotech (VTB bank\'s branch)',
         paramName: 'Software architect',
         imageId: 'vtb',
-        achievements: [{ name: 'Began stream of rewriting business applications with implementation React' }, { name: 'Built front-end part of HR services for customers' }, ]
+        achievements: [{ name: 'Responsible for stream of rewriting business applications with implementation React' }, { name: 'Built front-end part of HR services for customers' }, ]
       },
       {
 
-        beginDate: '02.2015',
+        beginDate: '02.2016',
         endDate: '08.2020',
         place: 'PJSC Sberbank',
         paramName: 'Middle - Senior Frontend Developer',
@@ -53,13 +53,42 @@ export const usersMock:IProfile[] = [
         ]
       },
       {
-
-        beginDate: '01.2014',
-        endDate: '02.2015',
+        beginDate: '08.2014',
+        endDate: '11.2015',
         place: 'Tekora',
         paramName: 'Expert consultant',
         imageId: 'tekora',
-        achievements: [{ name: 'Developed  a lot of dashboards with html, js, jQuery, css', }, { name: 'Experience with lots of SAP and Qlik products ', }]
+        achievements: [
+          { name: 'Developed  a lot of dashboards with html, js, jQuery, css' },
+          { name: 'Huge experience with lots of SAP BO reports and Qlik products ' },
+          { name: 'Transferring ABAP planing functions to ADMP and SAP HANA Views by means PAK' },
+          { name: 'Optimisation SQL requests for in-memory working' }
+        ]
+      },
+      {
+        beginDate: '08.2013',
+        endDate: '08.2014',
+        place: 'Tern',
+        paramName: 'Expert consultant',
+        imageId: 'tern',
+        achievements: [
+          { name: 'Designed business warehouse with SAP HANA' },
+          { name: 'Created dashboards by means of SAP Design Studio, SAP WebIntelligence' },
+          { name: 'Created data marts and enterprise portals utilizing SAPUI5 and XS(nodeJS)' },
+          { name: 'Optimisation SQL requests for in-memory working' }
+        ]
+      },
+      {
+        beginDate: '08.2014',
+        endDate: '09.2013',
+        place: 'BDO Unicon',
+        paramName: 'Intern and junior analyst ',
+        imageId: 'bdo',
+        achievements: [
+          { name: 'Working with SAP BW' },
+          { name: 'Created dashboards by means SAP Business Objects' },
+          { name: 'Writing SQL requests and creating views for SAP HANA' }
+        ]
       }
 
     ],
@@ -119,7 +148,34 @@ export const usersMock:IProfile[] = [
         name: 'git',
         rating: 6.5,
       }
-    ]
+    ],
+    softSkills: [
+      { name: 'Leading a team of 8 developers' },
+      { name: 'Learning new everyday' },
+      { name: 'Stay focused' },
+      { name: 'Agile working' },
+      { name: 'Respect deadlines' },
+      { name: 'Pay attention to details' }
+    ],
+    languages: [
+      {
+        flag: '🇷🇺',
+        language: 'Russian',
+        level: 'Native Speaker'
+      },
+      {
+        flag: '🇺🇸',
+        language: 'English',
+        level: 'Upper Intermediate (CLB 7)'
+      }
+    ],
+    hobbies: [
+      { name: 'Read' },
+      { name: 'Code' },
+      { name: 'Travel' },
+      { name: 'Tennis' },
+      { name: 'Paragliding' },
 
+    ]
   }
 ];

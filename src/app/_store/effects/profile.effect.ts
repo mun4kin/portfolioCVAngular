@@ -6,7 +6,14 @@ import {
 } from 'rxjs/operators';
 
 import {
-  GetMainInfoPending, GetMainInfoSuccess, mainInfoActions, GetEducationSuccess, GetJobSuccess, GetSummarySuccess, GetSkillsSuccess
+  GetMainInfoPending,
+  GetMainInfoSuccess,
+  mainInfoActions,
+  GetEducationSuccess,
+  GetJobSuccess,
+  GetSummarySuccess,
+  GetSkillsSuccess,
+  GetSoftSkillsSuccess, GetHobbiesSuccess, GetLanguagesSuccess
 } from '../actions/profile.action';
 import { Observable } from 'rxjs';
 import { Action } from '@ngrx/store';
@@ -24,7 +31,10 @@ export class mainInfoEffects {
         new GetEducationSuccess(data.education),
         new GetJobSuccess(data.job),
         new GetSummarySuccess(data.summary),
-        new GetSkillsSuccess(data.skills)
+        new GetSkillsSuccess(data.skills),
+        new GetSoftSkillsSuccess(data.softSkills),
+        new GetHobbiesSuccess(data.hobbies),
+        new GetLanguagesSuccess(data.languages)
       ])))
   );
 

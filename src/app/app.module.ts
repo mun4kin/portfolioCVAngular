@@ -13,9 +13,6 @@ import { AsidePartComponent } from './components/organisms/aside-part/aside-part
 import { HeaderPartComponent } from './components/organisms/header-part/header-part.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainTileComponent } from './components/atoms/main-tile/main-tile.component';
-
-
-import { AboutMeComponent } from './components/molecules/about-me/about-me.component';
 import { SkillsComponent } from './components/molecules/skills/skills.component';
 import { SoftSkillsComponent } from './components/molecules/soft-skills/soft-skills.component';
 import { LanguagesComponent } from './components/molecules/languages/languages.component';
@@ -30,9 +27,6 @@ import { SummaryComponent } from './components/molecules/summary/summary.compone
     AsidePartComponent,
     HeaderPartComponent,
     MainTileComponent,
-
-
-    AboutMeComponent,
     SkillsComponent,
     SoftSkillsComponent,
     LanguagesComponent,
