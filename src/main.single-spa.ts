@@ -5,7 +5,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { getSingleSpaExtraProviders, singleSpaAngular } from 'single-spa-angular';
 
-const tegName = 'cv';
+const tegName = 'mainContent';
 environment.production && enableProdMode();
 
 
