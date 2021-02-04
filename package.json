@@ -1,7 +1,7 @@
 {
   "name": "portfolio-cvangular",
   "version": "0.0.0",
-  "main": "dist/main-es2015.js",
+  "main": "module/main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
