@@ -12,7 +12,6 @@
   },
   "private": true,
   "dependencies": {
-    "//": "================singleSPA=================",
     "@angular-builders/custom-webpack": "^11.0.0",
     "@angular/animations": "~11.1.0",
     "@angular/common": "~11.1.0",
@@ -40,7 +39,6 @@
 
   },
   "devDependencies": {
-    "//": "===============eslint=============================",
     "@angular-devkit/build-angular": "^0.1101.1",
     "@angular-eslint/builder": "1.1.0",
     "@angular-eslint/eslint-plugin": "1.1.0",
