@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainPartComponent } from './main-part.component';
+import { SoftSkillsComponent } from './soft-skills.component';
 
-describe('MainPartComponent', () => {
-  let component: MainPartComponent;
-  let fixture: ComponentFixture<MainPartComponent>;
+describe('SoftSkillsComponent', () => {
+  let component: SoftSkillsComponent;
+  let fixture: ComponentFixture<SoftSkillsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainPartComponent ]
+      declarations: [ SoftSkillsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainPartComponent);
+    fixture = TestBed.createComponent(SoftSkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

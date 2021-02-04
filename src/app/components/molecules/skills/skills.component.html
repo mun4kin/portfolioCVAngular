@@ -1,0 +1,15 @@
+<div *ngFor="let skill of data">
+
+  <div class="skill" key={el.id}>
+
+    <fa-icon *ngIf="icons[skill.name] as icon" [styles]="{'color':skill.color}"  class="skill__image" [icon]="icon"></fa-icon>
+    <img *ngIf="!icons[skill.name]" class='skill__image' src='../../../../assets/images/{{skill.name}}.png' alt=""/>
+
+    <span class='skill__name'>{{skill.name}}</span>
+    <div class="skill__scale">
+      <div class="skill__scale-inner" [ngStyle]="{'width':skill.rating*10+'%'}"></div>
+    </div>
+  </div>
+
+
+</div>

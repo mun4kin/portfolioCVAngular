@@ -1,0 +1,72 @@
+@import "../../../_variables";
+
+.skill {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.skill__image {
+  display: flex;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  max-height: 20px;
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+
+.skill__name {
+  display: inline-block;
+  min-width: 90px;
+  margin-right: 0.5rem;
+text-transform: capitalize;
+}
+
+.skill__scale {
+  height: 3px;
+  max-height: 3px;
+  width: 100%;
+  background: $light100;
+}
+
+.skill__scale-inner {
+  height: 100%;
+  background: $primary;
+}
+
+.html {
+  color: #e44c25;
+}
+
+.css {
+  color: #369ad6;
+}
+
+.javascript {
+  color: #d0b531;
+}
+
+.angular{
+  fill: #dd0130;
+}
+
+.react {
+  fill: #61dafb;
+}
+
+.node {
+  color: #77b062;
+}
+
+.mongo {
+  color: #81c564;
+}
+
+.git {
+  color: #24292d;
+}
+
+.vue {
+  color: #40b883;
+}

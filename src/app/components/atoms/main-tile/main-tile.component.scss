@@ -1,0 +1,17 @@
+@import "../../../_variables.scss";
+
+.tile {
+  margin-bottom: 8px;
+}
+.tile-big {
+  margin-bottom: 24px;
+}
+.tile__title {
+  height: 24px;
+  margin-bottom: 12px;
+  color: $dark100;
+}
+
+.tile__title .tile__icon {
+  margin-right: 8px;
+}

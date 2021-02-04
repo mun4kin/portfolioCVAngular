@@ -1,1 +1,11 @@
-<p>main-part works!</p>
+<div class="main">
+  <app-main-tile [icon]="faUserCheck" [name]="'Summary'">
+    <app-summary [data]="summary|async"></app-summary>
+  </app-main-tile>
+  <app-main-tile [icon]="faBriefcase" [name]="'Work Experience'">
+    <app-timeline [data]="jobData|async"></app-timeline>
+  </app-main-tile>
+  <app-main-tile [icon]="faUniversity" [name]="'Education'">
+    <app-timeline [data]="education|async"></app-timeline>
+  </app-main-tile>
+</div>

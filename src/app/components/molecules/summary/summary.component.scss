@@ -1,0 +1,7 @@
+@import "../../../_variables.scss";
+
+.main__summary{
+  @include standardText(1rem,300);
+  padding-left: 40px;
+  padding-right: 8px;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Store } from '@ngrx/store';
@@ -11,20 +11,17 @@ import { IMainInfo } from '../../../_store/types/mainInfo.type';
   styleUrls: ['./header-part.component.scss']
 })
 
-export class HeaderPartComponent implements OnInit {
+export class HeaderPartComponent {
   // --------icons-----------
-  faEnvelope=faEnvelope;
-  faPhone=faPhone;
-  faLinkedin=faLinkedin;
-  faGithub=faGithub
+  public faEnvelope=faEnvelope;
+  public faPhone=faPhone;
+  public faLinkedin=faLinkedin;
+  public faGithub=faGithub;
   // ------------------------
   public mainInfo$:Observable<IMainInfo>
   // ++++++++++++++++++++++++
   constructor( private store: Store<IStore>) {
     this.mainInfo$ = store.select('mainInfo');
-  }
-
-  ngOnInit(): void {
   }
 
 }

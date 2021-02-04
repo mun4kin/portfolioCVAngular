@@ -1,0 +1,25 @@
+<div class='timeline' >
+  <div class='timeline__element avoid-page-break' *ngFor="let item of data; let i=index">
+    <div class='timeline__element-center'>
+      <div class='timeline__center-inner'></div>
+    </div>
+    <div class='timeline__element-right'>
+
+      <h3 class='timeline__element-name'>
+        <div class='timeline__element-logo--wrapper' *ngIf="item.imageId!==''">
+          <img class='timeline__element-logo' src="/assets/images/{{item.imageId}}.png" alt='image'/>
+        </div>
+        {{item.place}}
+      </h3>
+      <p class='timeline__element-position' *ngIf="item.paramName">{{item.paramName}}</p>
+      <div class='timeline__element-achievements' *ngIf="item.achievements && item.achievements.length">
+        <ng-container *ngFor="let achieve of item.achievements">
+          <div class='timeline__achievement-wrapper' >
+            <span class='timeline__achievements-label'></span>
+            <span class='timeline__achievement'>{{achieve.name}}</span>
+          </div>
+        </ng-container >
+      </div>
+    </div>
+  </div>
+</div>

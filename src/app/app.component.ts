@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { IStore } from './_store';
-import { GetMainInfoPending } from './_store/actions/mainInfo.action';
+import { GetMainInfoPending } from './_store/actions/profile.action';
 
 @Component({
   selector: 'app-root',

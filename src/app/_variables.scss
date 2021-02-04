@@ -1,10 +1,10 @@
-$primary: #26a69a;
+$primary: #26a69a; //header
 $light: #eeeeee;
 $light100: #e0e0e0;
 $light200: #f5f5f5;
 $boxShadowColor: rgba(165, 173, 182, 0.4);
 $dark: #263238;
-$dark100: #37474F;
+$dark100: #37474F; //icon
 
 
 @mixin lightText() {
