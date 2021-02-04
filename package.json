@@ -32,7 +32,6 @@
     "single-spa-angular-app": "^0.1.5",
     "tslib": "^2.0.0",
     "zone.js": "^0.11.3",
-    "//":"===============ICONS=============================",
     "@fortawesome/angular-fontawesome": "^0.8.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
