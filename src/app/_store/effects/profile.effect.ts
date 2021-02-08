@@ -20,7 +20,7 @@ import { Action } from '@ngrx/store';
 import { getMainInfo } from '../services/profile.service';
 import { IProfile } from '../types/mainInfo.type';
 // ===============================================================================================================
- @Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: 'root' })
 export class mainInfoEffects {
   @Effect()
   profile$: Observable<Action> = this.actions$.pipe(
