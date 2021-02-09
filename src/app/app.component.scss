@@ -7,6 +7,8 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px ;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 
@@ -15,6 +17,7 @@
   padding: 10px 5px 0 20px;
   flex-grow: 1;
   min-width: 600px;
+  height: calc( 100% + 300px);
 }
 .aside-cv{
   background: $light200;
@@ -25,9 +28,20 @@
   box-shadow: 0px 2px 6px rgba(25, 59, 104, 0.15);
   //box-shadow: 0px 2px 16px rgba(25, 59, 104, 0.1), 0px 8px 32px rgba(25, 59, 104, 0.15);
   border-radius: 20px;
+  max-height: 770px;
 }
 
-
+.root-cv {
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .main-cv {
+    height: calc( 100% + 240px);
+  }
+  .aside-cv{
+    display: none;
+  }
+}
 @media print {
   @page {
     size: auto;
