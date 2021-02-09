@@ -1,27 +1,30 @@
 @import "./_variables.scss";
 
 
-.root{
+
+.body-cv {
+  display: flex;
   max-width: 1440px;
   margin: 0 auto;
-}
-.body {
-  display: flex;
-
+  padding: 0 20px ;
 }
 
-.main {
+
+.main-cv {
 
   padding: 10px 5px 0 20px;
   flex-grow: 1;
   min-width: 600px;
 }
-.aside {
+.aside-cv{
   background: $light200;
-
+  margin-top: 10px;
   min-width: 330px;
   padding: 20px;
   height: 100%;
+  box-shadow: 0px 2px 6px rgba(25, 59, 104, 0.15);
+  //box-shadow: 0px 2px 16px rgba(25, 59, 104, 0.1), 0px 8px 32px rgba(25, 59, 104, 0.15);
+  border-radius: 20px;
 }
 
 
@@ -31,7 +34,7 @@
     margin: 0;
   }
 
-  body {
+  body-cv {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }

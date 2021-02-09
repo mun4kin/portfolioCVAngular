@@ -1,13 +1,20 @@
 @import "../../../_variables.scss";
 
 .header {
+
+  background: $primary;
+
+}
+.header__wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   min-height: 120px;
-  padding: 20px;
-  background: $primary;
+  padding: 20px 40px;
   position: relative;
-  z-index: 2;
+
 }
+
 
 .header__contacts {
   margin-left: auto;
@@ -17,7 +24,7 @@
 }
 
 .header__contacts-wrapper {
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .header__contacts-row {
@@ -26,7 +33,9 @@
   margin-bottom: 8px;
   @include lightText;
 }
-
+.header__contacts-row:last-of-type{
+  margin-bottom: 0;
+}
 .header__contacts-row i {
   margin-right: 8px;
 }
@@ -42,4 +51,24 @@
 
 .header__contacts-icon {
   padding-right: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .header__wrapper{
+    flex-direction: column;
+  }
+  .header__contacts {
+    margin-left: 0;
+    justify-content: flex-start;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__contacts-wrapper{
+    padding-bottom: 8px;
+  }
+  .header__contacts-wrapper:last-of-type{
+    padding-bottom: 0;
+  }
+
 }
