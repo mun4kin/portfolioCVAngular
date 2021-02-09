@@ -2,6 +2,10 @@
 
 .soft-skill {
   display: flex;
+  padding-bottom: 4px;
+}
+.soft-skill:last-of-type{
+  padding-bottom: 0px;
 }
 
 .soft-skill__name {

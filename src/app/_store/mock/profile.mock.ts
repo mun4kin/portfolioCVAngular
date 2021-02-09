@@ -36,7 +36,11 @@ export const usersMock:IProfile[] = [
         place: 'Innotech (VTB bank\'s branch)',
         paramName: 'Software architect',
         imageId: 'vtb',
-        achievements: [{ name: 'Responsible for stream of rewriting business applications with implementation React' }, { name: 'Built front-end part of HR services for customers' }, ]
+        achievements: [
+          { name: 'Developed micro-frontend architecture' },
+          { name: 'Responsible for stream of rewriting business applications with implementation React' },
+          { name: 'Built front-end part of HR services for 60,000 customers' },
+        ]
       },
       {
 
@@ -47,7 +51,7 @@ export const usersMock:IProfile[] = [
         imageId: 'sber',
         achievements: [
           { name: 'Implemented Angular and React which resulted in Time To Market rate decrease', },
-          { name: 'Built HR Ecosystem web applications for 350.000+ users', },
+          { name: 'Built HR Ecosystem web applications for 350,000+ users', },
           { name: 'Our applications won first prize at Digital Pyramid 2020 Award ', },
           { name: 'Received highest annual rate', }
         ]

@@ -2,8 +2,11 @@
 
 .language {
   display: flex;
+  padding-bottom: 4px;
 }
-
+.language:last-of-type{
+  padding-bottom: 0;
+}
 .language__flag {
   @include standardText();
   margin-right: 4px;

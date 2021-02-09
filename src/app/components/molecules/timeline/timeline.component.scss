@@ -19,7 +19,7 @@ color: $dark100;
   align-items: flex-start;
 }
 .timeline__element-body{
-  padding-left: 20px;
+  padding:  8px 0 8px 20px;
 }
 .timeline__element-date {
   height: 20px;
@@ -92,8 +92,11 @@ color: $dark100;
 }
 .timeline__achievement-wrapper {
   display: flex;
+  padding-bottom: 4px;
 }
-
+.timeline__achievement-wrapper:last-of-type{
+  padding-bottom: 0;
+}
 .timeline__achievements-label {
   background-color: $primary;
   margin-top: 0.5rem;
