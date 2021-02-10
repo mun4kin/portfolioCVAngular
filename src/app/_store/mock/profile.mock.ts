@@ -13,12 +13,12 @@ export const usersMock:IProfile[] = [
       linkedIn: 'https://linkedin.com/in/anton-pugachev',
       email: 'pugachev.anton.al@gmail.com'
     },
-    summary: 'I am an experienced software developer with 8 years of experience in banking, human resources, and logistics. ' +
-      'I used to work with SAP products such as SAP HANA, SAP BO, and SAP Success Factors also i got a certificate C_HANAIMP.' +
-      ' All of my projects were near Frontend Development and I dipped more and more until I decided that frontend more interesting for me.' +
-      ' I have been a frontend developer since 2015. My first projects was written on Angular ' +
-      'but I had to change the technology stack to React at 2018. Currently, ' +
-      'I’m a leader and an  architect of all internal portals in one of the largest bank of Russia.',
+    summary: 'I am an experienced software developer with 8 years of experience in banking, ' +
+      'human resources, and logistics. I used to work with SAP products such as SAP HANA, SAP BO,' +
+      ' and SAP Success Factors also I got a certificate C_HANAIMP. All of my projects were near ' +
+      'Frontend Development and I dipped more and more until I decided that frontend more interesting for me.' +
+      ' I have been a frontend developer since 2015. My first projects were written on Angular but I had to change ' +
+      'the technology stack to React in 2018. Currently, I’m a leader and an architect of all internal portals in one of the largest banks in Russia.',
     education:
       [
         {

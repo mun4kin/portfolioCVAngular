@@ -15,3 +15,10 @@
 .language__level {
   @include standardText(1rem, 300);
 }
+.language__image{
+  height: 16px;
+  width: 16px;
+  margin-top: 3px;
+  margin-right: 10px;
+
+}

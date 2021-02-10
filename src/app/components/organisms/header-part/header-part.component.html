@@ -1,4 +1,4 @@
-<header class="header" *ngIf="mainInfo$ |async as info">
+<header *ngIf="mainInfo$ |async as info">
   <div class="header__wrapper">
     <div class="header__info">
       <h1 class="header__name">{{info.surname + ' ' + info.name}}</h1>
